@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+  font-family: "x";
+  src: url("../fonts/x.ttf");
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "x";
+}
+
+body {
+  height: 100%;
+  background: black;
+  color: white;
+}
+
+main {
+  height: 100%;
+}
+
+.inner {
+  position: relative;
+  width: 88%;
+  max-width: 52vw;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.me--fixed {
+  position: fixed;
+}
+
+h1, h2 {
+  font-size: 1.9rem;
+  font-weight: 400;
+}
+
+h1 {
+  margin-top: 0.8rem;
+  padding-top: 32vh;
+}
+
+h2 {
+  opacity: 0.4;
+  margin-top: 0.8rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.link {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  display: block;
+  margin-bottom: .2rem;
+}
+
+.email {
+  margin-top: 3.2rem;
+  opacity: 0.4;
+}
+
+.icon__arrow-long {
+  padding-bottom: 6vh;
+}
+
+main > .inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer {
+  padding-bottom: 6vh;
+}
+
+@media (max-device-width: 450px) {
+
+  .inner  { max-width: none; }
+  h1      { padding-top: 14vh; }
+  h1, h2  { font-size: 1.7rem; }
+  .link   { line-height: 2; }
+  
+}
