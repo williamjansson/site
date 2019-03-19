@@ -1,12 +1,18 @@
 * {
     padding: 0;
     margin: 0;
+    cursor: default;
+    
 }
 
 @font-face {
   font-family: "x";
   src: url("../fonts/x.ttf");
 }
+
+::selection {
+    background: white;
+    foreground: black;
 
 html {
   height: 100%;
