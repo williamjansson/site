@@ -19,7 +19,6 @@ html {
   font-size: 62.5%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "x";
   line-height: 1.15;
   -webkit-text-size-adjust: 100%
 }
@@ -28,6 +27,7 @@ body {
   height: 100%;
   background: black;
   color: white;
+  font-family: "Maison Neue", sans-serif;
   cursor: url(../imgs/cursor.png) 6 6, auto;
   cursor: -webkit-image-set(url(../img/cursor.png) 1x, url(../img/cursor2x.png) 2x) 6 6, auto;
 }
