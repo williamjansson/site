@@ -1,8 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    cursor: default;
-    
 }
 
 @font-face {
@@ -29,6 +27,8 @@ body {
   height: 100%;
   background: black;
   color: white;
+  cursor: url(../imgs/cursor.png) 6 6, auto;
+  cursor: -webkit-image-set(url(../img/cursor.png) 1x, url(../img/cursor2x.png) 2x) 6 6, auto;
 }
 
 main {
@@ -65,14 +65,18 @@ h2 {
 a {
   color: white;
   text-decoration: none;
-  cursor: pointer;
+  cursor: -webkit-image-set(url(../img/pointer.png) 1x, url(../img/pointer2x.png) 2x) 6 6, pointer;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .link {
   font-size: 1.6rem;
   display: inline-block;
   padding: 0.4rem;
-  margin: 0.1rem 0 0 -0.4rem;
+  margin: 0 0 0 -0.4rem;
 }
 
 li {
@@ -80,7 +84,6 @@ li {
     display: block;
 }
 
-li:first-child a { margin: 0 0 0.1rem -0.4rem; }
 li:last-child a  { margin: 3.2rem 0 0 -0.4rem; }
 
 .email {
@@ -102,10 +105,8 @@ footer {
 }
 
 @media (max-device-width: 450px) {
-
   .inner  { max-width: none; }
   h1      { padding-top: 14vh; }
   h1, h2  { font-size: 1.7rem; }
   .link   { line-height: 2; }
-  
 }
