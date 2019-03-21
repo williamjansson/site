@@ -108,5 +108,6 @@ footer {
   .inner  { max-width: none; }
   h1      { padding-top: 14vh; }
   h1, h2  { font-size: 1.7rem; }
-  .link   { padding: 0 0.6rem; }
+  .link   { padding: 0.6rem; margin: 0 0 0 -0.6rem; }
+  li:last-child a { margin: 3.2rem 0 0 -0.6rem; }
 }
