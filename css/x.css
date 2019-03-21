@@ -108,5 +108,5 @@ footer {
   .inner  { max-width: none; }
   h1      { padding-top: 14vh; }
   h1, h2  { font-size: 1.7rem; }
-  .link   { line-height: 2; }
+  .link   { padding: 0 0.6rem; }
 }
