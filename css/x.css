@@ -11,8 +11,9 @@
 }
 
 ::selection {
-    background: white;
-    foreground: black;
+    background: #faebd7;
+    color: black;
+}
 
 html {
   height: 100%;
@@ -20,6 +21,8 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "x";
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%
 }
 
 body {
@@ -55,25 +58,33 @@ h1 {
 }
 
 h2 {
-  opacity: 0.4;
-  margin-top: 0.8rem;
+  color: rgba(255,255,255, 0.4);
+  margin-top: 0.6rem;
 }
 
 a {
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .link {
   font-size: 1.6rem;
-  line-height: 1.5;
-  display: block;
-  margin-bottom: .2rem;
+  display: inline-block;
+  padding: 0.4rem;
+  margin: 0.1rem 0 0 -0.4rem;
 }
 
+li {
+    list-style-type: none;
+    display: block;
+}
+
+li:first-child a { margin: 0 0 0.1rem -0.4rem; }
+li:last-child a  { margin: 3.2rem 0 0 -0.4rem; }
+
 .email {
-  margin-top: 3.2rem;
-  opacity: 0.4;
+   color: rgba(255,255,255, 0.4);
 }
 
 .icon__arrow-long {
