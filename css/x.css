@@ -4,8 +4,9 @@
 }
 
 @font-face {
-  font-family: "x";
-  src: url("../fonts/x.ttf");
+  font-family: "Maison Neue";
+  src: url("../fonts/MaisonNeue-Book.woff2") format('woff2'),
+       url("../fonts/MaisonNeue-Book.woff") format('woff');
 }
 
 ::selection {
