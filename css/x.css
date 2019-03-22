@@ -51,6 +51,7 @@ main {
 h1, h2 {
   font-size: 1.8rem;
   font-weight: 400;
+  letter-spacing: 0.072rem;
 }
 
 h1 {
