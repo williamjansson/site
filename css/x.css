@@ -29,7 +29,7 @@ body {
   color: white;
   font-family: "Maison Neue", sans-serif;
   letter-spacing: 0.0418rem;
-  cursor: url(../imgs/cursor.png) 6 6, auto;
+  cursor: url(../img/cursor.png) 6 6, auto;
   cursor: -webkit-image-set(url(../img/cursor.png) 1x, url(../img/cursor2x.png) 2x) 6 6, auto;
 }
 
