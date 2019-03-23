@@ -67,6 +67,7 @@ h2 {
 a {
   color: white;
   text-decoration: none;
+  cursor: url(../img/pointer.png) 6 6, pointer;
   cursor: -webkit-image-set(url(../img/pointer.png) 1x, url(../img/pointer2x.png) 2x) 6 6, pointer;
 }
 
