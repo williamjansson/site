@@ -20,15 +20,19 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.15;
-  -webkit-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%;
+  text-rendering: geometricPrecision;
 }
 
 body {
   height: 100%;
+  padding: 0 2.4rem;
   background: black;
   color: white;
   font-family: "Maison Neue", sans-serif;
-  letter-spacing: 0.0418rem;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.04rem;
   cursor: url(../img/cursor.png) 6 6, auto;
   cursor: -webkit-image-set(url(../img/cursor.png) 1x, url(../img/cursor2x.png) 2x) 6 6, auto;
 }
@@ -39,8 +43,8 @@ main {
 
 .inner {
   position: relative;
-  width: 88%;
-  max-width: 52vw;
+  width: 100%;
+  max-width: 800px;
   margin: 0 auto;
   height: 100%;
 }
@@ -105,6 +109,10 @@ main > .inner {
 
 footer {
   padding-bottom: 6vh;
+}
+
+@media (max-device-width: 1300px) {
+  .inner { max-width: 800px; }
 }
 
 @media (max-device-width: 450px) {
