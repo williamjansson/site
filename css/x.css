@@ -55,7 +55,7 @@ h1, h2 {
 
 h1 {
   margin-top: 0.8rem;
-  padding-top: 32vh;
+  padding-top: 30vh;
   letter-spacing: 0.04rem;
 }
 
@@ -64,6 +64,7 @@ h2 {
   font-size: 1.2rem;
   color: rgba(0,0,0, .33);
   margin-top: .8rem;
+  margin-bottom: 2.4rem;
 }
 
 a {
@@ -96,7 +97,7 @@ main > .inner {
 }
 
 ul {
-  padding-bottom: 11vh;
+  padding-bottom: 12vh;
 }
 
 @media (max-device-width: 1300px) {
