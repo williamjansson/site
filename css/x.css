@@ -26,7 +26,7 @@ html {
 
 body {
   height: 100%;
-  padding: 0 2.4rem;
+  padding: 0 3rem;
   background: #f1f2f2;
   color: #111111;
   font-family: "Maison Neue", sans-serif;
@@ -63,7 +63,7 @@ h2 {
   font-family: "M PLUS 1p";
   font-size: 1.2rem;
   color: rgba(0,0,0, .33);
-  margin-top: 1rem;
+  margin-top: .8rem;
 }
 
 a {
@@ -96,7 +96,7 @@ main > .inner {
 }
 
 ul {
-  padding-bottom: 11vh;
+  padding-bottom: 14vh;
 }
 
 @media (max-device-width: 1300px) {
@@ -106,7 +106,6 @@ ul {
 @media (max-device-width: 450px) {
   .inner  { max-width: none; }
   h1      { padding-top: 14vh; }
-  h1      { font-size: 1.7rem; }
   .link   { padding: 0.6rem; margin: 0 0 0 -0.6rem; }
-  ul      { padding-bottom: 2.4rem; }
+  ul      { padding-bottom: 3rem; }
 }
