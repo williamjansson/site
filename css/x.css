@@ -61,9 +61,10 @@ h1 {
 
 h2 {
   font-family: "M PLUS 1p";
-  font-size: 1.2rem;
+  font-size: 1rem;
+  letter-spacing: .12rem;
   color: rgba(0,0,0, .33);
-  margin-top: .8rem;
+  margin-top: .9rem;
   margin-bottom: 2.4rem;
 }
 
