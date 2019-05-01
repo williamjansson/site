@@ -30,6 +30,7 @@ body {
   background: #f1f2f2;
   color: #111111;
   font-family: "Maison Neue", sans-serif;
+  font-size: 1.5rem;
   font-weight: normal;
   font-style: normal;
   cursor: url(../img/cursor.png) 6 6, auto;
@@ -53,10 +54,11 @@ h1, h2 {
   font-weight: 400;
 }
 
-h1 {
+.intro {
+  line-height: 1.5;
   margin-top: 0.8rem;
   padding-top: 30vh;
-  letter-spacing: 0.04rem;
+  max-width: 280px;
 }
 
 a {
@@ -98,7 +100,7 @@ ul {
 
 @media (max-device-width: 450px) {
   .inner  { max-width: none; }
-  h1      { padding-top: 14vh; }
+  .intro      { padding-top: 14vh; }
   .link   { padding: 0.6rem; margin: 0 0 0 -0.6rem; }
   ul      { padding-bottom: 2.4rem; }
 }
