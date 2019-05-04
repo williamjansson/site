@@ -93,6 +93,6 @@ nav {
 
 @media (max-device-width: 450px) {
   .inner { max-width: none; }
-  .intro { padding-top: 12vh; }
+  .intro { padding-top: 15vh; }
   nav    { padding-bottom: 2.4rem; }
 }
