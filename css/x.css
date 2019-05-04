@@ -75,7 +75,7 @@ a:hover {
   font-size: 1.5rem;
   line-height: 1.5;
   display: inline-block;
-  margin-right: 2.4rem;
+  margin-right: 2.2rem;
 }
 
 main > .inner {
@@ -93,7 +93,7 @@ nav {
 }
 
 @media (max-device-width: 450px) {
-  .inner  { max-width: none; }
-  .intro      { padding-top: 14vh; }
-  nav      { padding-bottom: 2.4rem; }
+  .inner { max-width: none; }
+  .intro { padding-top: 14vh; }
+  nav    { padding-bottom: 2.4rem; }
 }
