@@ -56,7 +56,6 @@ h1, h2 {
 
 .intro {
   line-height: 1.5;
-  margin-top: 0.8rem;
   padding-top: 30vh;
   max-width: 280px;
 }
@@ -76,11 +75,7 @@ a:hover {
   font-size: 1.5rem;
   line-height: 1.5;
   display: inline-block;
-}
-
-li {
-    list-style-type: none;
-    display: block;
+  margin-right: 2.4rem;
 }
 
 main > .inner {
@@ -89,7 +84,7 @@ main > .inner {
   justify-content: space-between;
 }
 
-ul {
+nav {
   padding-bottom: 11vh;
 }
 
@@ -100,6 +95,5 @@ ul {
 @media (max-device-width: 450px) {
   .inner  { max-width: none; }
   .intro      { padding-top: 14vh; }
-  .link   { padding: 0.6rem; margin: 0 0 0 -0.6rem; }
-  ul      { padding-bottom: 2.4rem; }
+  nav      { padding-bottom: 2.4rem; }
 }
