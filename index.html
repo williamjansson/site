@@ -5,9 +5,105 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta name="description" content="Swedish designer living in Tokyo, Japan.">
     <title>William Jansson</title>
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=M+PLUS+1p">
-    <link rel="stylesheet" href="css/x.css?v=15">
+
+	<style>
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+  font-family: "Maison Neue";
+  src: url("fonts/MaisonNeue-Book.woff2") format('woff2'),
+       url("fonts/MaisonNeue-Book.woff") format('woff');
+}
+
+::selection {
+    background: transparent;
+    color: blue;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: geometricPrecision;
+}
+
+body {
+  height: 100%;
+  padding: 0 2.4rem;
+  background: #f1f2f2;
+  color: #111111;
+  font-family: "Maison Neue", sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-style: normal;
+}
+
+main {
+  height: 100%;
+}
+
+.inner {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+h1, h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.intro {
+  line-height: 1.5;
+  padding-top: 28vh;
+  max-width: 280px;
+}
+
+a {
+  color: #111111;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.link {
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-right: 2.2rem;
+}
+
+main > .inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav {
+  padding-bottom: 10vh;
+}
+
+@media (max-device-width: 1300px) {
+  .inner { max-width: 800px; }
+}
+
+@media (max-device-width: 450px) {
+  .inner { max-width: none; }
+  .intro { padding-top: 15vh; }
+  nav    { padding-bottom: 2.4rem; }
+}
+	</style>
   </head>
   <body>
     <main>
@@ -20,3 +116,4 @@
     </main>
   </body>
 </html>
+
