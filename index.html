@@ -21,8 +21,8 @@
 	}
 
 	::selection {
-		background: transparent;
-		color: blue;
+		background: #111111;
+		color: #f1f2f2;
 	}
 
 	html {
@@ -41,8 +41,8 @@
 	  background: #f1f2f2;
 	  color: #111111;
 	  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-	  cursor: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" width="14" height="14"><circle cx="7" cy="7" r="5" stroke="%23aaaaaa" stroke-width="2" fill="transparent"/></svg>'), auto;
-	  cursor: -webkit-image-set(url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" width="14" height="14"><circle cx="7" cy="7" r="5" stroke="%23aaaaaa" stroke-width="2" fill="transparent"/></svg>') 1x,url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="28" height="28"><circle cx="14" cy="14" r="10" stroke="%23aaaaaa" stroke-width="4" fill="transparent"/></svg>') 2x), auto;
+	  cursor: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" width="14" height="14"><circle cx="7" cy="7" r="5" stroke="%23aeaeae" stroke-width="2" fill="transparent"/></svg>') 7 7, auto;
+	  cursor: -webkit-image-set(url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" width="14" height="14"><circle cx="7" cy="7" r="5" stroke="%23aeaeae" stroke-width="2" fill="transparent"/></svg>') 1x,url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="28" height="28"><circle cx="14" cy="14" r="10" stroke="%23aeaeae" stroke-width="4" fill="transparent"/></svg>') 2x) 7 7, auto;
 	  font-size: 1.4rem;
 	  font-style: normal;
 	  font-weight: 400;
@@ -65,8 +65,13 @@
 	  font-weight: 400;
 	}
 
-	.intro {
+	p {
+	  display: inline;
+	  cursor: text;
 	  line-height: 1.5;
+	}
+
+	.me {
 	  padding-top: 28vh;
 	  max-width: 280px;
 	}
@@ -74,19 +79,39 @@
 	a {
 	  color: #111111;
 	  text-decoration: none;
-	  cursor: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" width="14" height="14"><circle cx="7" cy="7" r="5" stroke="%23444444" stroke-width="2" fill="%23444444"/></svg>'), auto;
-	  cursor: -webkit-image-set(url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" width="14" height="14"><circle cx="7" cy="7" r="5" stroke="%23444444" stroke-width="2" fill="%23444444"/></svg>') 1x,url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="28" height="28"><circle cx="14" cy="14" r="10" stroke="%23444444" stroke-width="4" fill="%23444444"/></svg>') 2x), auto;
+	  cursor: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" width="14" height="14"><circle cx="7" cy="7" r="5" stroke="%23333333" stroke-width="2" fill="%23333333"/></svg>') 7 7, auto;
+	  cursor: -webkit-image-set(url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" width="14" height="14"><circle cx="7" cy="7" r="5" stroke="%23333333" stroke-width="2" fill="%23333333"/></svg>') 1x,url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="28" height="28"><circle cx="14" cy="14" r="10" stroke="%23333333" stroke-width="4" fill="%23333333"/></svg>') 2x) 7 7, auto;
 
 	}
 
-	a:hover {
-	  text-decoration: underline;
+	.link:hover span::after {
+	  transform: scaleX(1);
 	}
 
 	.link {
 	  font-size: 1.4rem;
 	  display: inline-block;
 	  margin-right: 2.2rem;
+	}
+	
+	.link > span {
+	  position: relative;
+	}
+
+	.link > span::after {
+	  content: '';
+	  display: block;
+	  position: absolute;
+	  width: 12px;
+	  height: 2px;
+	  pointer-events: none;
+	  transform-origin: left top;
+	  transform: scaleX(0);
+	  bottom: -8px;
+	  left: 50%;
+	  margin-left: -6px;
+	  transition: .3s;
+	  background: #111111;
 	}
 
 	main > .inner {
@@ -116,7 +141,7 @@
         <div class="me">
           <p class="intro">William Jansson is a Swedish designer living in Tokyo, Japan.</p>
         </div>
-        <nav>  <a class="link" href="mailto:william@jansson.co">Email</a><a class="link" href="https://dribbble.com/williamjansson" target="_blank">Work</a></nav>
+        <nav>  <a class="link" href="mailto:william@jansson.co"><span>Email</span></a><a class="link" href="https://dribbble.com/williamjansson" target="_blank"><span>Work</span></a></nav>
       </div>
     </main>
   </body>
