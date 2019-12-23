@@ -94,15 +94,8 @@
 
 	}
 
-	.link:hover span::before {
-		transform: translateX(-50%) scaleX(1);
-		transition: transform .25s;
-	}
-
 	.link:hover span::after {
-		opacity: 0;
-		transform: translateX(-50%) scaleX(1);
-		transition: all 0s;
+	  transform: translateX(-50%) scaleX(1);
 	}
 
 	.link {
@@ -114,21 +107,6 @@
 	  position: relative;
 	}
 
-	.link > span::before {
-		content: '';
-		display: block;
-		position: absolute;
-		width: 10px;
-		height: 2px;
-		pointer-events: none;
-		transform-origin: left top;
-		transform: translateX(-50%) scaleX(0);
-		bottom: -10px;
-		left: 50%;
-		transition: all 0s;
-		background: #333;
-	}
-
 	.link > span::after {
 	  content: '';
 	  display: block;
@@ -136,13 +114,12 @@
 	  width: 10px;
 	  height: 2px;
 	  pointer-events: none;
-	  transform-origin: right top;
+	  transform-origin: left top;
 	  transform: translateX(-50%) scaleX(0);
 	  bottom: -10px;
 	  left: 50%;
-	  transition: transform .25s;
+	  transition: .25s;
 	  background: #333;
-	  opacity: 1;
 	}
 
 	.inner__left {
@@ -188,14 +165,14 @@
 	}
 
 	.img_wrap::after {
-	  content: 'view case';
+	  content: 'coming soon';
 	  font-size: 12px;
-	  //text-decoration: underline solid blue 4px;
+	  text-decoration: underline;
 	  text-align: right;
 	  position: absolute;
 	  display: block;
 	  width: 100%;
-	  padding: 14px 0 0;
+	  padding: 15px 0 1px;
 	  top: 150px;
 	  left: 0;
 	  color: #808080;
@@ -241,65 +218,13 @@
   </head>
   <body>
     <main>
-      <div class="inner">
-		<div class="inner__left">
-        <div class="me">
-          <p class="intro">William Jansson is a Swedish designer living in Tokyo, Japan.</p>
-        </div>
-        <nav>  
-		  <a class="link" href="about.html" target="_blank"><span>About</span></a>
-		  <a class="link" href="mailto:william@jansson.co"><span>Email</span></a>
-		</nav>
-		</div>
-		<div class="inner__right">
-		  <div class="item">
-		    <a class="item__link" href="#">
-			  <div class="img_wrap">
-			    <img src="img/app.jpg" width="200px" height="auto">
-		      </div>
-			  <div class="desc">
-				<ul>
-				  <li>3</li>
-				  <li>Mnml shop</li>
-				  <li>2018.10</li>
-				</ul>
-			  </div>
-			</a>
-		  </div> <!-- end item -->
-
-		  <div class="item">
-		    <a class="item__link" href="#">
-			  <div class="img_wrap">
-			    <img src="img/web.jpg" width="200px" height="auto">
-		      </div>
-			  <div class="desc">
-				<ul>
-				  <li>2</li>
-				  <li>web shop</li>
-				  <li>2018.10</li>
-				</ul>
-			  </div>
-			</a>
-		  </div> <!-- end item -->
-
-		  <div class="item">
-		    <a class="item__link" href="#">
-			  <div class="img_wrap">
-			    <img src="img/jisho.png" width="200px" height="auto">
-		      </div>
-			  <div class="desc">
-				<ul>
-				  <li>1</li>
-				  <li>Dictionary</li>
-				  <li>2017.3</li>
-				</ul>
-			  </div>
-			</a>
-		  </div> <!-- end item -->
-
-		</div>
-      </div>
-    </main>
+	  <div class="inner">
+		<section>
+		  <h1>William C. Jansson</h1>
+		  <p>designer specialzed in interactive, ui/ux design.</p>
+		</section>
+	  </div>
+	</main>
   </body>
 </html>
 
