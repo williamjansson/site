@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Tasty - William Jansson</title>
+	<link rel="icon" type="img/png" href="data:image/gif;base64,R0lGODlhEAAQAIABAKqqqv///yH5BAEKAAEALAAAAAAQABAAAAIZjI+py+2PgARvzmYty3dxuX1YVnXQiaZoAQA7">
+	<meta name="description" content="Swedish designer with a focus on simplicity.">
+	<style>
+
+@font-face {
+	font-family: "Roboto Mono";
+	src: url("data:font/woff2;charset=utf-8;base64,d09GMgABAAAAABJEAA4AAAAAISgAABHuAAIAQQAAAAAAAAAAAAAAAAAAAAAAAAAABmAAgTwIgRwJlxcRCAqheJ4VATYCJANQC0gABCAFBgcgDIEuGwkesxFRUyfhDsB/ncCNIeg/zGojqggFH4qjZIVx3wy61RLlLaKH4zjY6ij1fLRwbspn/ANa0zyGhjiKpoilRSvVCElm/afarPerq5pWIOYdESeZHnUIjKjRF7LrZMWFjKiTrOhd/DYyQKd2lVIhQqWol1Ri4IJIVzL9LZvT0XioUPcvFWXCala5ANkB+uCQ/CAIUlB+8Is6Ra2uGjnc/wDhsE/W9qKOmB0bjVCIkUrCQxez5+fKmQfJX8QcAW0huycLKaAF0pW+slLV2Ov/An+CZr9fZq+AkMk7yApdyvxqpLyD8a2Rda7+f3N92Vsv+ag6AwRqhAGUsgJdp1JJT3fSH/OxezhDCEKRgwWZAWC3AOTQjRar7eoVwqzOIQatut194wBlSXJbQz3tWjaRITzY+QSQ+FU+AwGI10QjQHn3c5JuYClDMzHhfVm/Y+Mm2LAQVhbejQPKQlZpgd6eTADvEDEAlhRjTHKTLY82Bscn73cJLHDIsFCJGnTAh24MxQhMwhT40YMFWIQlWIb1CN8XeMe2OrUCG/8v4gYNuOSiC84547DddtnpP2skVq1YjtC4BwZeDkXM8yJwLxGZz08//LZJv+GDezbg441/eW69ku/MYfQZ+HViQPtVC5YN+jeqs4ACj3GapKf/sHj7FPn+U6Rpj7LXfKASeIHZ8F+RaRksbeG8B68gbDICEjk0ELHyoIFRK3H8Bl4+jWWYjely+uZz9OZdCR0z5SZ67Fcn2tZmt70mVcbCsKIsnO7hHKpTddw4Pp8OVKKDC83NUWXRlbZGLWj5DuSUkoM8JQM3cZ1Sg0RNBbdhJUS8iggNyBqc9wnKBk7z5rWqoh90dQywlurgeRaQej73noSK9Rfb9Fo3YfDyOuZXbniToiUv7PsIuXPMGd3E6oK44tKIFjyQpas9ugloGGD9A2gAJaLX4KIMXUmP5T8ufWkpYmdiy+dJvZ7C0TUnMQ0XPeBQNwyAr2m6O7mBgFvWtBRWrdAKsYfoPKw9bIwWQzIbJsPsjq4ioKiSsKktDMup92jUZ8ea6J35dNE3mKys1bC4ThrchFLCiCcb04k1JMwedsfMRRs8FF5Ybqh/XAalsOKOrDL/2OYkWJKXT9/FyoeTdLosNbIfMiE65XV8+vYUOH9qSYMmsmIp3kuPtRJUAx5PTsXMQjXOzFwO2jQh2aUqgDl4uKFENXR9z1upWPcdD5j5a1/nTxgxxxQzs5FwbU4Qb1shh2wCBTgbCbh8B5K4UdFq3kU8GjRF14Cm8AzKUP3tXd6URbkKZf5/4qSzxd2p1JDMirVLDSmstIxUYkgjCenEkUECmSQji1zIJgU5pM5fTrXQ59Aq8KNV4vdtncsNSm4ny2OHzLIq8omhgCQUEkcRCRSTjBJyoZQUlJEqqwQdEtULZryp3kJeHxLeQ6py7o2pIdVOda+hltJc0SjasGMvZZvPVed82tm6EF2eNqntVYGNabyanMzWo7NplskN1C2b3UbuIdgMFEFuwKZpRWz+QvPmTO7ZTm3AxsWGJqrT3OY6EOtv1NDM9ljX0MKeg7JmyS1aWZlsnlGrOdDsfp8el+hc5zYoLpxPkIaxBdg4fLGhjWATbnBjS0aNS+tSo1JX2igjtVep1VOEa+CMxPw5v7x9G3+y4+1jZ8VlezeF18FZSqgUSpyjzTI8ppPKr0XOC34Ci7wypBhWywwEg4PKr0MblXuowSR4sdmw4wwlZjAz7ZEOmbVVVlzLqoz/mYUNCM0RvHjlmSHllp1XuvXGk+lGRzk2+agWBYc663ZSWmcBRUNezsQa0IqY8tFsJ9KoXg8PsVVn3sEIxwkBeyBbZIfH78BOsDaZxenoKE1l1fWwEBdXfp3UyoOdCGfcTVOLXOLsTVSX2lqD9UupsiGjvNqJLbFpvrMPJW2ueOVhpN2LddwlzKFKW10AHi019OzwLGNFpGGrqdPK7Kh8e49gVcYtpOM/Yp6BlgvWa8ypne04H/Nqn+xUIwERGNCoam87XrYRt9lof2OChiPmojyUK2/qjc2YGWNZgUBAMwrjSKuJ8dfC5tTUalYKK1bhBKZkwHh3gYkcIZPJJhEwuZKETSFgqgGZsmkETK8kYX4CAgbkIeshIFhJwkIEzDAgPZtJwKxKEjabgDkGZMbmEjCvkoTNJ2CBAQlsIQGLKknYYsL0JaQDarW0I6D70JaxIVgeYrMwGyuynRJYqXdild7pra7Mxpqs7461ug/rdB/W6z5sKOvCRr0L3LZJ78JmvWupLVW7VM4+QF3DqzKmLIlJRVNK31cuYQsC3f8/D5rKQpSPwmtVAFIewH8F4AbgBeRFAACClLXUFQyshDKsJRI8Gy2/NoMnq6oiud2ax1RctZ4qy6hI1Yx0w9QK01NTUxOTfVa6mmTkaI4Jg2mSQaakO27yLOrddeyS3nfhyBOR2OHzWvTi0deqMWPXIEwOHNqB7bRu/DjHCGmOvkPbas7VHTMOI4Dbvf1hRR80gjQQ9yRp4e28/Rx9FddCRLbGQvNcQL2YMcpwjB1oNShpU+MVC4b1hNfey/2kBVqUEVDvk9f1Aw8udPvycWjv71SfuvlZJF6NtX2ov5VFBImQcSO+bvpgnn5biTmETJX2niauXPC57HQNUwivmdwvDAYDXzBVmD3ye0g0M6/ODQR1JTJA47DgERmuGomu97cjPbLktVO10lcnrw6a7HhkE14yhbGs99bRegOR60l58xAKW0cFPzyjnOuOLr7EZX6mObocXKYvXuHkPTtUXUQ1nMCpwWBfYJdxyThkzdXrj+7/5Iv0tRkDI6KXs7tUaRi0navjmsiom+a4/pzwx9weirBdFAtyUdNMy0zjmqMH0EyXJj8/IbaK03fmzB7Tf4zC+aQu6/TuvDrQMxBKIe7dDOfSMSTSfyUeSAxhif7uQg4zYfCo8oA8p1pKA/NViYTNOj2uznQCt7hLV7RNgWAqyWVONE+fs8Ajhbk9kx6TEk4sydcoKFTPy1FnFGlwTXhreuWi6mQU37HwyWl0nL98GBpfrpGtDejIVUDkdAFmaw3vGj4sOyzeJV6REVz5jn83/HXelyCw5FgcLtcPi4BjfHO8X3UMCaOvNiT28Mx+fYQkV9FPkis/osxju/ZTHMv7KY4VB5o/P7YokyPLnglLZfBc6RjsqXQXwbRhfwl+DHBp5LDcu6x5adw3YIgBDMV9m5e+yxoGcrEmdUMiQBLB7SDvBb6xADZlD6ddEi6Ss3Hbg43xAIgeuwGXDrgt6LYbUeIfIIsl38iU2+jSwAqZKSwMmb65/+KZAGIY+YFBCPe3yfPysikMC2Saf0BaB/jqHQLS2wa4/Cc4SYVmWho2Nh+FbZfOwI5KjxmK5s+hd/s4RuFTDUlx7Y4ZMUShT6JfU13CDmveqVhHbKgnOQ1Oo8RB90Iw6+ogj500SclNmbDhJ3m2JH8n65fCdFQ6yanQENvy/2+vzW5Nz7cw846IhPqU1zmlIQOpNiGam4DHAfVlWRNgXMXO+PJB10NMK4br4fLBnfEVGdN0YYFnT9QmYCnO1zMDT40T+vizEW1+Vv6Idj+20IfWoc/fF9rSEbyfZ9UQfa69WxqcKtoYIeimHuRFK8kHOtUlZFRQgrNHwp08ufHLEUGFLk0YZcEparZFeBiZrx7kB8FjCr2j85w9OvBl4ClO31Rkbo7Yj+ilKlrGMrwWSgVLtDwrhh7bKs/fJ51t4k8NRAdC8F6F+KAAc4Zfamq/R2b2VDR7gHZCKAtHdfkxWG6hDiFGJ3/qfdD9fiPYyC6M7e7HRHWH92huAy1HM6fbp7k/ufF77NhUSrWdbQWFyrDV2wZiPAuoU0zmODXHJUu5UHNYnugFQIjJZt7uhILQ6cKwvbZpVGq1rW0llZpC+vijpb54HYiA9bXSuqzsh9sP/Sh+7au5A1gGJjJG+WXs57rrEEHFXNUi92BgyFHwucAtCCip6Ru0kFq1VgLoj/9M8J5Sa08X3wfg36epUpBn6ANqToHRkrRCILbdPjOXOM7cJJMEILPfJkFpqZ0plsGqMjC0jCDyPlE9sD2GL9gRI7znREZBdpxFI5pLskgWge8NYQncQ0P47p1LIcIonNCH4HuEhvI8/v2HI70/6QopJxgDk9F52WL3ZFUZ4LdWVEUkrw1+uQVTkYw+yqkyWTimO4DJcQ9LLI3Ceqi5l0SkhHI8/FmYnvAsCjHMjE9YuWqyLTlDnVQ/LcIX7lgHpaoSz4RdeQWUi0j04O1cXDAkRW8DiRlEy/H2cuVzYkcdU3OmnDnJ9HJ/GRbr9TkJ6UJLMJXcRKJ4S1nIYEi2wQSZEULN9Q7wEAmiZ2wz2BKwOMOtxldGJYaG2afr24taYp0Jvh7K4z3jIe7ISG6AviXi28kgBdN6lqdBKCROxTqg0iI5gdiZEwLrgSm7kA8MkcJnEopi24iZHOJaWYOsKQEqoPhEQEm89mR0qOo6uOwTq6bjpeul99lhL3QQ7IJeAfdBI1sMR81G1zaXSDbDVsxWSjbPQ3LA/mUxdMlsaVHcv28wj2Yuo3pv9htNYK5ZjWl5w+b+D+kaklZjX28w53oeE/PQEkyNDueQArU+fdleBxer8Pq4KoSXao2BwB44TuU8rkMsHs/jfV8euH/OPxqWWwuwHTCGYUe/GJqXlZmHt3ptv69ycIg/M0JJAT/CXbJwJPe1kqBQob8KJoiFZ8sRGUDc51JYaAcKwF7HA46W5rpv8CT/6Ze/u/6OjVtWhfG1IMvThCkMoOETRM6GOMlzjgZKkaGXUHGq4jUAgslqx9f2iuUyUE7K/ZqMEorTUWitgh+LQJgq1d0AJXCOUb2mKUTo4vJlqFOg8hlmNnKeh2x5D5LelGXJTdeA9kUcIaAZVGnCKEeT0sjrU+rw0MFnvu7To3UVuKRQoSh/gIic0WeI2GuYPR7SdMdrAAOMtjZHg9aivcgbhXKJcXbRMczpJsxRh28ogOZUpRdFQD5UkYGMiJmpwLdNIR85Vrkah+YqLBIPU2EKh6jLx5hO4rEFoKXkoQcYTU+hWJhPamnNsTRVyGOSkwGvtX30bnZgBEbY38M8mqZ5u4WpWZqQRks/E0sliC7zmgQeDxF3V9VgWNtiXPNXLJIHeTnk3T1sb5oBt7xcqhT0PB2SVaiWwPlTcTdcBBmAy+QIJKvBeX5uNkfs+7W6BYrmSZFUP905ok7aAMFTfhrMzSB7438+oibLpYaP6ZsdqCAvuK2R7KRoSK7szLa7NqQulP3qa6qWDY78JMvKUS9+T3JlADDCPpJqs39y81ew5A5CRFFMtjFRSZOuktjP2HxrEhRDTAWxiTIZZXEvMI4vhywHkHsvm4dyRtc3cua6TI4NyeqvCaHfLGnVIVIZucnOmXiW55OdZsAB61Pnz0AE0NFxo2DmqKmgApgdPlEwkMsqzBMsd5RLNJmcwNwC4ZrmzEI+zOT1DFWXBagAIvLagHwMWpVZ6m+ca8UM2PnlnKrn/0YB4fxOolaMpmKxukpUlFYNJHx1NoPcWy2owqZ6ds4g+1vIgmqlXMoHNKTh8yvXhsDezX7AXMy/4SMmaeJARydH/V6rkTeags6jDCsUVqkiacwI0S9jQjGnSyH5lAAmMVkzKwVVZUJ/9duAkHgpDX5bxLEzHMD2NKHR7JyqsLVSq8tawcxCcMZrYCo78Uql6YWoFHHOZmqUaWV7nqs1tafLx0EuUj1oCszaybry1MBOSfuoVLGt4pvpNau9nR9oai5VzFHUSEjqrZ+BPRVgZo9ffy1N/yP4RVz/b+bzh6/neXz/Bw0FAHD6L90WAG488J51R/yNx68qmwCoYAAAAv5lzKmvMcp/bDwJCM0cwa8AzzO28av4zn5I/sUw+Aw7MRWv42kcwwSMxhtrxUfxBC7hFmLXlzUHXyGML2ksvsZT2I2FqMNajMA7IACFiCEV6yHAMAXzsQ3Aj/rLkGxoJ0M66/2iFqO58vj9OD8t1E/01IwY/SB46fX9kIftwejGPI6K9ava2kTqUEqUZBdXOkeYhBFynZwjbqYNO5IUcR/PHXcbHOqAe3gANmwkSxjRX0SPTQ3F7MdCNxZTyXwHlQiI72iRP8TmzlAPaWuT4FPKlFQXNyr20/2m8Sf72SsisXgEAAA=") format('woff2');
+	}
+
+	*      { padding: 0; margin: 0; }
+	html   { font-size: 62.5%; }
+	footer { display: flex; }
+
+	a { color: #111; text-decoration: none; padding: .4rem; margin: -.4rem; outline: 0; }
+	a:hover span,
+	a:focus span { border-bottom: 1px dotted #111 }
+
+	body {
+		padding: 0 3.2rem;
+		background: #eee;
+		color: #111;
+		font: 1.2rem/1.4 "Roboto Mono", monospace;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	::selection {
+		background: #111;
+		color: #eee;
+	}
+
+	main,
+	footer {
+		position: relative;
+		width: 100%;
+		max-width: 60rem;
+		margin: 0 auto;
+		margin-top: 28vh;
+	}
+
+	footer {
+		margin: 0 auto 18rem;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	footer a:focus { color: #808080 }
+
+	#home {
+		color: #808080;
+		border: none;
+		padding: 1rem;
+		margin: -1rem 10rem -1rem -1rem;
+	}
+
+	#home:hover,
+	#home:focus { color: #111 }
+
+	figure {
+		position: absolute;
+		top: -10rem;
+		left: 0;
+		display: flex;
+		align-items: baseline;
+		width: 100%;
+	}
+
+	dl {
+		display: grid;
+		grid-template-columns: 9.2rem auto;
+	}
+
+	.clr {
+		position: absolute;
+		right: 0;
+		top: 4.1rem;
+		display: flex;
+	}
+
+	.clr span {
+		display: block;
+		width: 8px;
+		height: 6px;
+		background: black;
+		margin-right: .3rem;
+	}
+
+	.clr span:nth-child(1) { background: #111; width: 8px }
+	.clr span:nth-child(2) { background: #fff; width: 4px }
+	.clr span:nth-child(3) { background: #cdc7c3; width: 18px;}
+	.clr span:nth-child(4) { background: #2d5c64; width: 32px; margin: 0 }
+
+
+
+	img {
+		display: block;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%
+		height: 100%
+		outline: none;
+	}
+
+	.img__wrap {
+		position: relative;
+		width: 100%;
+		height: 0;
+		background: #2d5c64;
+		margin-bottom: 4rem;
+	}
+
+	.img__wrap:last-child { margin-bottom: 5.2rem }
+
+	.img__wrap:nth-child(1) { padding-top: 57%; background: #cdc7c3 }
+	.img__wrap:nth-child(2) { padding-top: 56.1666667% }
+	.img__wrap:nth-child(3) { padding-top: 6%; margin-bottom: .1rem}
+	.img__wrap:nth-child(4) { padding-top: 6%; //margin-bottom: .1rem }
+	.img__wrap:nth-child(5) { padding-top: 56.1666667% }
+	.img__wrap:nth-child(6) { padding-top: 56.1666667% }
+
+
+	@media screen and (min-width: 1400px) {
+		html { font-size: calc(14/1.2 * 6.25%) }
+	}
+
+	@media screen and (min-width: 960px)
+		{html { margin: 0 0 0 calc(100vw - 100%) }
+	}
+
+	@media (max-device-width: 632px) {
+		main { margin-top: 28vh }
+		#home { display: none }
+		figure { top: -12rem }
+		.clr { top: 8.7rem }
+		.img__wrap { margin-bottom: 1.6rem }
+		footer { margin-bottom: 5.2rem }
+	}
+
+	</style>
+</head>
+<body>
+	<main>
+		<div class="overview">
+			<figure>
+				<a id="home" href="/"><---</a>
+				<dl>
+					<dt>project:</dt><dd>Tasty - Visualizer</dd>
+					<dt>role:</dt><dd>Design + Animation</dd>
+					<dt>url:</dt><dd><a href="http://tastynetwork.com" target="_blank"><span>tastynetwork.com</span></a></dd>
+				</dl>
+				<div class="clr">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</figure>
+		</div>
+
+		<div class="img">
+			<div class="img__wrap">
+				<img src="img/tasty_large1.jpg">
+			</div>
+			<div class="img__wrap">
+				<img src="img/tasty_large2.jpg">
+			</div>
+			<div class="img__wrap">
+				<img src="img/tasty_large4.jpg">
+			</div>
+			<div class="img__wrap">
+				<img src="img/tasty_large5.jpg">
+			</div>
+			<div class="img__wrap">
+				<img src="img/tasty_large3.jpg">
+			</div>
+			<div class="img__wrap">
+				<video width="600" height="337" poster="img/thumb.jpg" controls>
+					<source src="img/video.mp4" type="video/mp4">
+				</video>
+			</div>
+	</main>
+
+	<footer>
+		<a style="color: #808080; pointer-events: none"><-- Prev</a>
+		<a href="/premo">Next --></a>
+	</footer>
+</body>
+</html>
+
