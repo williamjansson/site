@@ -107,11 +107,11 @@
 	}
 
 	video {
+		width: 100%;
+		height: 100%;
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 100%
-		height: 100%
 		outline: none;
 	}
 
@@ -134,7 +134,7 @@
 
 
 	@media screen and (min-width: 1400px) {
-		html { font-size: calc(14/1.2 * 6.25%) }
+		html { font-size: calc(15/1.2 * 6.25%) }
 	}
 
 	@media screen and (min-width: 960px)
@@ -189,7 +189,7 @@
 			</div>
 			<div class="img__wrap">
 				<video width="600" height="337" poster="img/thumb.jpg" controls>
-					<source src="img/video.mp4" type="video/mp4">
+					<source src="img/video.mp4" type="video/mp4" media="all and max-width: 600px">
 				</video>
 			</div>
 	</main>
